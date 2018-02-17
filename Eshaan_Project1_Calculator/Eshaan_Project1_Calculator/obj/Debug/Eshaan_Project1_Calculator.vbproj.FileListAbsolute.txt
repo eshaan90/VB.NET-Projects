@@ -1,0 +1,10 @@
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\bin\Debug\Eshaan_Project1_Calculator.exe.config
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\bin\Debug\Eshaan_Project1_Calculator.exe
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\bin\Debug\Eshaan_Project1_Calculator.pdb
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\bin\Debug\Eshaan_Project1_Calculator.xml
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\obj\Debug\WindowsApplication1.MyForm.resources
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\obj\Debug\Eshaan_Project1_Calculator.vbproj.GenerateResource.Cache
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\obj\Debug\Eshaan_Project1_Calculator.exe
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\obj\Debug\Eshaan_Project1_Calculator.xml
+C:\Users\evkirpal\Documents\Visual Studio 2013\Projects\Eshaan_Project1_Calculator\Eshaan_Project1_Calculator\obj\Debug\Eshaan_Project1_Calculator.pdb
