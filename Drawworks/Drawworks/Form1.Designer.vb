@@ -48,11 +48,6 @@ Partial Class Form1
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
@@ -62,13 +57,50 @@ Partial Class Form1
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button25 = New System.Windows.Forms.Button()
+        Me.Button24 = New System.Windows.Forms.Button()
+        Me.Button23 = New System.Windows.Forms.Button()
+        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Button21 = New System.Windows.Forms.Button()
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.Button26 = New System.Windows.Forms.Button()
+        Me.Button27 = New System.Windows.Forms.Button()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -188,7 +220,7 @@ Partial Class Form1
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(113, 26)
         Me.TextBox8.TabIndex = 11
-        Me.TextBox8.Text = "0"
+        Me.TextBox8.Text = "43.6"
         Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'TextBox9
@@ -205,11 +237,11 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(639, 99)
+        Me.Label3.Location = New System.Drawing.Point(627, 99)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(97, 19)
+        Me.Label3.Size = New System.Drawing.Size(109, 19)
         Me.Label3.TabIndex = 13
-        Me.Label3.Text = "Motor Speed"
+        Me.Label3.Text = "Motor Position"
         '
         'Label4
         '
@@ -309,19 +341,17 @@ Partial Class Form1
         Me.Label13.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.Location = New System.Drawing.Point(771, 180)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(50, 19)
+        Me.Label13.Size = New System.Drawing.Size(0, 19)
         Me.Label13.TabIndex = 23
-        Me.Label13.Text = "DW A"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(771, 291)
+        Me.Label14.Location = New System.Drawing.Point(771, 285)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(51, 19)
+        Me.Label14.Size = New System.Drawing.Size(0, 19)
         Me.Label14.TabIndex = 24
-        Me.Label14.Text = "DW B"
         '
         'Label15
         '
@@ -329,59 +359,8 @@ Partial Class Form1
         Me.Label15.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.Location = New System.Drawing.Point(771, 390)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(51, 19)
+        Me.Label15.Size = New System.Drawing.Size(0, 19)
         Me.Label15.TabIndex = 25
-        Me.Label15.Text = "DW C"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(191, 772)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(82, 19)
-        Me.Label22.TabIndex = 32
-        Me.Label22.Text = "Temp High"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(191, 798)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(79, 19)
-        Me.Label23.TabIndex = 33
-        Me.Label23.Text = "Level Low"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(191, 835)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(46, 19)
-        Me.Label24.TabIndex = 34
-        Me.Label24.Text = "Temp"
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(275, 831)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(77, 26)
-        Me.TextBox10.TabIndex = 35
-        Me.TextBox10.Text = "0"
-        Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(355, 837)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(21, 16)
-        Me.Label25.TabIndex = 36
-        Me.Label25.Text = "°C"
         '
         'Label26
         '
@@ -469,65 +448,9 @@ Partial Class Form1
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.Location = New System.Drawing.Point(736, 76)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(38, 16)
+        Me.Label34.Size = New System.Drawing.Size(35, 16)
         Me.Label34.TabIndex = 45
-        Me.Label34.Text = "RPM"
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(60, 814)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(79, 19)
-        Me.Label35.TabIndex = 46
-        Me.Label35.Text = "HPU Tank"
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Button3.Location = New System.Drawing.Point(652, 180)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 23)
-        Me.Button3.TabIndex = 47
-        Me.Button3.Text = "Start"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.Snow
-        Me.Label16.Location = New System.Drawing.Point(934, 45)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(79, 19)
-        Me.Label16.TabIndex = 48
-        Me.Label16.Text = "Simulation"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(938, 99)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 49
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Manual Mode"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(938, 122)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(77, 17)
-        Me.RadioButton2.TabIndex = 50
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Auto Mode"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.Label34.Text = "Feet"
         '
         'Button4
         '
@@ -539,13 +462,492 @@ Partial Class Form1
         Me.Button4.Text = "Documentation"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'StatusStrip1
+        'GroupBox1
         '
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 895)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1397, 22)
-        Me.StatusStrip1.TabIndex = 52
-        Me.StatusStrip1.Text = "StatusStrip1"
+        Me.GroupBox1.Controls.Add(Me.Button25)
+        Me.GroupBox1.Controls.Add(Me.Button24)
+        Me.GroupBox1.Controls.Add(Me.Button23)
+        Me.GroupBox1.Controls.Add(Me.Button22)
+        Me.GroupBox1.Controls.Add(Me.Button21)
+        Me.GroupBox1.Controls.Add(Me.Button20)
+        Me.GroupBox1.Controls.Add(Me.Button19)
+        Me.GroupBox1.Controls.Add(Me.Button18)
+        Me.GroupBox1.Controls.Add(Me.Button17)
+        Me.GroupBox1.Controls.Add(Me.Button16)
+        Me.GroupBox1.Controls.Add(Me.Button15)
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.Controls.Add(Me.Button6)
+        Me.GroupBox1.Controls.Add(Me.Button11)
+        Me.GroupBox1.Controls.Add(Me.Button12)
+        Me.GroupBox1.Controls.Add(Me.Button13)
+        Me.GroupBox1.Controls.Add(Me.Button14)
+        Me.GroupBox1.Controls.Add(Me.Button10)
+        Me.GroupBox1.Controls.Add(Me.Button9)
+        Me.GroupBox1.Controls.Add(Me.Button8)
+        Me.GroupBox1.Controls.Add(Me.Button7)
+        Me.GroupBox1.Controls.Add(Me.Button5)
+        Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Snow
+        Me.GroupBox1.Location = New System.Drawing.Point(886, 122)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(416, 460)
+        Me.GroupBox1.TabIndex = 52
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Simulation"
+        '
+        'Button25
+        '
+        Me.Button25.BackColor = System.Drawing.Color.IndianRed
+        Me.Button25.Enabled = False
+        Me.Button25.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button25.Location = New System.Drawing.Point(263, 46)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(102, 71)
+        Me.Button25.TabIndex = 75
+        Me.Button25.Text = "Emergency Stop Release"
+        Me.Button25.UseVisualStyleBackColor = False
+        Me.Button25.Visible = False
+        '
+        'Button24
+        '
+        Me.Button24.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button24.Enabled = False
+        Me.Button24.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button24.Location = New System.Drawing.Point(263, 288)
+        Me.Button24.Name = "Button24"
+        Me.Button24.Size = New System.Drawing.Size(102, 71)
+        Me.Button24.TabIndex = 74
+        Me.Button24.Text = "DW Caliper 5,6 Apply"
+        Me.Button24.UseVisualStyleBackColor = False
+        Me.Button24.Visible = False
+        '
+        'Button23
+        '
+        Me.Button23.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button23.Enabled = False
+        Me.Button23.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button23.Location = New System.Drawing.Point(146, 288)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(102, 71)
+        Me.Button23.TabIndex = 73
+        Me.Button23.Text = "DW Caliper 4 Apply"
+        Me.Button23.UseVisualStyleBackColor = False
+        Me.Button23.Visible = False
+        '
+        'Button22
+        '
+        Me.Button22.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button22.Enabled = False
+        Me.Button22.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button22.Location = New System.Drawing.Point(29, 288)
+        Me.Button22.Name = "Button22"
+        Me.Button22.Size = New System.Drawing.Size(102, 71)
+        Me.Button22.TabIndex = 72
+        Me.Button22.Text = "DW Caliper 3 Apply"
+        Me.Button22.UseVisualStyleBackColor = False
+        Me.Button22.Visible = False
+        '
+        'Button21
+        '
+        Me.Button21.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button21.Enabled = False
+        Me.Button21.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button21.Location = New System.Drawing.Point(146, 208)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(102, 71)
+        Me.Button21.TabIndex = 71
+        Me.Button21.Text = "DW Caliper 1,2 Apply"
+        Me.Button21.UseVisualStyleBackColor = False
+        Me.Button21.Visible = False
+        '
+        'Button20
+        '
+        Me.Button20.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button20.Enabled = False
+        Me.Button20.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button20.Location = New System.Drawing.Point(29, 46)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(102, 71)
+        Me.Button20.TabIndex = 70
+        Me.Button20.Text = "DW Off"
+        Me.Button20.UseVisualStyleBackColor = False
+        Me.Button20.Visible = False
+        '
+        'Button19
+        '
+        Me.Button19.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button19.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button19.Location = New System.Drawing.Point(263, 288)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(102, 71)
+        Me.Button19.TabIndex = 69
+        Me.Button19.Text = "DW Caliper 5,6 Release"
+        Me.Button19.UseVisualStyleBackColor = False
+        '
+        'Button18
+        '
+        Me.Button18.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button18.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button18.Location = New System.Drawing.Point(164, 132)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(61, 59)
+        Me.Button18.TabIndex = 68
+        Me.Button18.Text = "▲"
+        Me.Button18.UseVisualStyleBackColor = False
+        '
+        'Button17
+        '
+        Me.Button17.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button17.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button17.Location = New System.Drawing.Point(164, 52)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(61, 59)
+        Me.Button17.TabIndex = 67
+        Me.Button17.Text = "▲"
+        Me.Button17.UseVisualStyleBackColor = False
+        '
+        'Button16
+        '
+        Me.Button16.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button16.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button16.Location = New System.Drawing.Point(146, 208)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(102, 71)
+        Me.Button16.TabIndex = 66
+        Me.Button16.Text = "DW Caliper 1,2 Release"
+        Me.Button16.UseVisualStyleBackColor = False
+        '
+        'Button15
+        '
+        Me.Button15.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button15.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button15.Location = New System.Drawing.Point(29, 288)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(102, 71)
+        Me.Button15.TabIndex = 65
+        Me.Button15.Text = "DW Caliper 3 Release"
+        Me.Button15.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button3.Location = New System.Drawing.Point(146, 288)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(102, 71)
+        Me.Button3.TabIndex = 64
+        Me.Button3.Text = "DW Caliper 4 Release"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.IndianRed
+        Me.Button6.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button6.Location = New System.Drawing.Point(263, 46)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(102, 71)
+        Me.Button6.TabIndex = 63
+        Me.Button6.Text = "Emergency Stop"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button11.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button11.Location = New System.Drawing.Point(263, 208)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(102, 71)
+        Me.Button11.TabIndex = 62
+        Me.Button11.Text = "High Clutch"
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button12.Enabled = False
+        Me.Button12.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button12.Location = New System.Drawing.Point(263, 368)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(102, 71)
+        Me.Button12.TabIndex = 61
+        Me.Button12.Text = "HPU B Stop"
+        Me.Button12.UseVisualStyleBackColor = False
+        Me.Button12.Visible = False
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button13.Enabled = False
+        Me.Button13.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button13.Location = New System.Drawing.Point(29, 368)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(102, 71)
+        Me.Button13.TabIndex = 60
+        Me.Button13.Text = "HPU A Stop"
+        Me.Button13.UseVisualStyleBackColor = False
+        Me.Button13.Visible = False
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button14.Enabled = False
+        Me.Button14.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button14.Location = New System.Drawing.Point(29, 208)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(102, 71)
+        Me.Button14.TabIndex = 59
+        Me.Button14.Text = "Lube Pump Stop"
+        Me.Button14.UseVisualStyleBackColor = False
+        Me.Button14.Visible = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button10.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button10.Location = New System.Drawing.Point(29, 46)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(102, 71)
+        Me.Button10.TabIndex = 58
+        Me.Button10.Text = "DW On"
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button9.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button9.Location = New System.Drawing.Point(263, 126)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(102, 71)
+        Me.Button9.TabIndex = 57
+        Me.Button9.Text = "Low Clutch"
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button8
+        '
+        Me.Button8.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button8.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button8.Location = New System.Drawing.Point(263, 367)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(102, 71)
+        Me.Button8.TabIndex = 56
+        Me.Button8.Text = "HPU B Start"
+        Me.Button8.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button7.Location = New System.Drawing.Point(29, 368)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(102, 71)
+        Me.Button7.TabIndex = 55
+        Me.Button7.Text = "HPU A Start"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button5.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button5.Location = New System.Drawing.Point(29, 208)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(102, 71)
+        Me.Button5.TabIndex = 53
+        Me.Button5.Text = "Lube Pump Start"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.RadioButton3)
+        Me.GroupBox2.Controls.Add(Me.RadioButton2)
+        Me.GroupBox2.Controls.Add(Me.RadioButton1)
+        Me.GroupBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.Color.Snow
+        Me.GroupBox2.Location = New System.Drawing.Point(886, 19)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(416, 97)
+        Me.GroupBox2.TabIndex = 53
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Mode"
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.RadioButton2.Location = New System.Drawing.Point(23, 55)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(103, 23)
+        Me.RadioButton2.TabIndex = 54
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Auto Mode"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.RadioButton1.Location = New System.Drawing.Point(23, 32)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(123, 23)
+        Me.RadioButton1.TabIndex = 53
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Manual Mode"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(39, 711)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(60, 19)
+        Me.Label20.TabIndex = 55
+        Me.Label20.Text = "Pump A"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(470, 711)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(61, 19)
+        Me.Label21.TabIndex = 56
+        Me.Label21.Text = "Pump B"
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox10.Location = New System.Drawing.Point(462, 71)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(113, 26)
+        Me.TextBox10.TabIndex = 62
+        Me.TextBox10.Text = "0.0"
+        Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(482, 100)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(75, 19)
+        Me.Label22.TabIndex = 63
+        Me.Label22.Text = "Air Press."
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(578, 81)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(28, 16)
+        Me.Label23.TabIndex = 64
+        Me.Label23.Text = "bar"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.GroupBox3.Controls.Add(Me.Button27)
+        Me.GroupBox3.Controls.Add(Me.Button26)
+        Me.GroupBox3.Controls.Add(Me.Label24)
+        Me.GroupBox3.Controls.Add(Me.TextBox12)
+        Me.GroupBox3.Controls.Add(Me.Label25)
+        Me.GroupBox3.Controls.Add(Me.Label35)
+        Me.GroupBox3.Controls.Add(Me.Label36)
+        Me.GroupBox3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.Snow
+        Me.GroupBox3.Location = New System.Drawing.Point(140, 766)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(260, 119)
+        Me.GroupBox3.TabIndex = 65
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "HPU Tank"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label24.Location = New System.Drawing.Point(238, 77)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(21, 16)
+        Me.Label24.TabIndex = 66
+        Me.Label24.Text = "°C"
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox12.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.TextBox12.Location = New System.Drawing.Point(158, 70)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(77, 26)
+        Me.TextBox12.TabIndex = 65
+        Me.TextBox12.Text = "0"
+        Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label25.Location = New System.Drawing.Point(71, 74)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(46, 19)
+        Me.Label25.TabIndex = 64
+        Me.Label25.Text = "Temp"
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label35.Location = New System.Drawing.Point(69, 49)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(79, 19)
+        Me.Label35.TabIndex = 63
+        Me.Label35.Text = "Level Low"
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label36.Location = New System.Drawing.Point(69, 23)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(82, 19)
+        Me.Label36.TabIndex = 62
+        Me.Label36.Text = "Temp High"
+        '
+        'Button26
+        '
+        Me.Button26.Enabled = False
+        Me.Button26.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button26.Location = New System.Drawing.Point(53, 27)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(10, 15)
+        Me.Button26.TabIndex = 67
+        Me.Button26.UseVisualStyleBackColor = True
+        '
+        'Button27
+        '
+        Me.Button27.Enabled = False
+        Me.Button27.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button27.Location = New System.Drawing.Point(53, 53)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(10, 15)
+        Me.Button27.TabIndex = 68
+        Me.Button27.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.RadioButton3.Location = New System.Drawing.Point(204, 32)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(141, 23)
+        Me.RadioButton3.TabIndex = 55
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "Simulation Mode"
+        Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -553,13 +955,15 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1397, 917)
-        Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.Label23)
+        Me.Controls.Add(Me.Label22)
+        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.Label21)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
-        Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Label35)
         Me.Controls.Add(Me.Label34)
         Me.Controls.Add(Me.Label33)
         Me.Controls.Add(Me.Label32)
@@ -569,11 +973,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label28)
         Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.Label26)
-        Me.Controls.Add(Me.Label25)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.Label24)
-        Me.Controls.Add(Me.Label23)
-        Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
@@ -602,6 +1001,11 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "Menu Application"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -633,11 +1037,6 @@ Partial Class Form1
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents Label27 As Label
     Friend WithEvents Label28 As Label
@@ -647,11 +1046,45 @@ Partial Class Form1
     Friend WithEvents Label32 As Label
     Friend WithEvents Label33 As Label
     Friend WithEvents Label34 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Label16 As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents Button4 As Button
-    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Button19 As Button
+    Friend WithEvents Button18 As Button
+    Friend WithEvents Button17 As Button
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button15 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button20 As Button
+    Friend WithEvents Button21 As Button
+    Friend WithEvents Button22 As Button
+    Friend WithEvents Button24 As Button
+    Friend WithEvents Button23 As Button
+    Friend WithEvents Button25 As Button
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label35 As Label
+    Friend WithEvents Label36 As Label
+    Friend WithEvents Button27 As Button
+    Friend WithEvents Button26 As Button
+    Friend WithEvents RadioButton3 As RadioButton
 End Class
