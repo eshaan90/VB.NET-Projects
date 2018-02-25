@@ -78,6 +78,11 @@
     <Compile Include="Alarms Page.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Alarm_ManagementDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Alarm_ManagementDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +117,17 @@
     <Compile Include="Setup.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Test Page.Designer.vb">
+      <DependentUpon>Test Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Test Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testdbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>testdbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Wait Func.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -133,8 +149,22 @@
     <EmbeddedResource Include="Setup.resx">
       <DependentUpon>Setup.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Test Page.resx">
+      <DependentUpon>Test Page.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Alarm_ManagementDataSet.xsc">
+      <DependentUpon>Alarm_ManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Alarm_ManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Alarm_ManagementDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Alarm_ManagementDataSet.xss">
+      <DependentUpon>Alarm_ManagementDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -145,6 +175,22 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="testdbDataSet.xsc">
+      <DependentUpon>testdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="testdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>testdbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="testdbDataSet.xss">
+      <DependentUpon>testdbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Alarm Management.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

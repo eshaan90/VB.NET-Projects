@@ -2,6 +2,8 @@
 
 Public Class Form1
 
+
+
     Dim g As System.Drawing.Graphics
     Private low_clutch As Integer = 0
     Private high_clutch As Integer = 0
@@ -702,6 +704,20 @@ Public Class Form1
     End Sub
 
     Private Sub Button17_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Button17.KeyPress
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label16.Text = TimeOfDay
+    End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+        Label16.Text = TimeOfDay
+    End Sub
+
+    Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+        Test_Page.Show()
+        Me.Hide()
 
     End Sub
 End Class

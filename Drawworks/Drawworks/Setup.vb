@@ -44,4 +44,28 @@
         End If
 
     End Sub
+
+    Private Sub Setup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Alarm_ManagementDataSet.Alarms_Database' table. You can move, or remove it, as needed.
+        Me.Alarms_DatabaseTableAdapter.Fill(Me.Alarm_ManagementDataSet.Alarms_Database)
+
+    End Sub
+
+    Private Sub GroupBox3_Enter(sender As Object, e As EventArgs) Handles GroupBox3.Enter
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Alarms_DatabaseBindingSource.RemoveCurrent()
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Alarms_DatabaseBindingSource.Clear()
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Me.Validate()
+        Me.Alarms_DatabaseBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Alarm_ManagementDataSet)
+    End Sub
 End Class

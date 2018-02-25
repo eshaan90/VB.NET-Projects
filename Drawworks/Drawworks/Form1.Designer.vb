@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -82,6 +83,7 @@ Partial Class Form1
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -90,14 +92,16 @@ Partial Class Form1
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button27 = New System.Windows.Forms.Button()
+        Me.Button26 = New System.Windows.Forms.Button()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.Button26 = New System.Windows.Forms.Button()
-        Me.Button27 = New System.Windows.Forms.Button()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Button28 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -145,6 +149,7 @@ Partial Class Form1
         '
         'TextBox1
         '
+        Me.TextBox1.Enabled = False
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(317, 142)
         Me.TextBox1.Name = "TextBox1"
@@ -155,6 +160,7 @@ Partial Class Form1
         '
         'TextBox2
         '
+        Me.TextBox2.Enabled = False
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(106, 142)
         Me.TextBox2.Name = "TextBox2"
@@ -165,6 +171,7 @@ Partial Class Form1
         '
         'TextBox3
         '
+        Me.TextBox3.Enabled = False
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(151, 315)
         Me.TextBox3.Name = "TextBox3"
@@ -175,6 +182,7 @@ Partial Class Form1
         '
         'TextBox4
         '
+        Me.TextBox4.Enabled = False
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(347, 315)
         Me.TextBox4.Name = "TextBox4"
@@ -185,6 +193,7 @@ Partial Class Form1
         '
         'TextBox5
         '
+        Me.TextBox5.Enabled = False
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(347, 505)
         Me.TextBox5.Name = "TextBox5"
@@ -195,6 +204,7 @@ Partial Class Form1
         '
         'TextBox6
         '
+        Me.TextBox6.Enabled = False
         Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox6.Location = New System.Drawing.Point(151, 505)
         Me.TextBox6.Name = "TextBox6"
@@ -205,6 +215,7 @@ Partial Class Form1
         '
         'TextBox7
         '
+        Me.TextBox7.Enabled = False
         Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox7.Location = New System.Drawing.Point(299, 562)
         Me.TextBox7.Name = "TextBox7"
@@ -215,6 +226,7 @@ Partial Class Form1
         '
         'TextBox8
         '
+        Me.TextBox8.Enabled = False
         Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox8.Location = New System.Drawing.Point(623, 70)
         Me.TextBox8.Name = "TextBox8"
@@ -225,6 +237,7 @@ Partial Class Form1
         '
         'TextBox9
         '
+        Me.TextBox9.Enabled = False
         Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox9.Location = New System.Drawing.Point(709, 661)
         Me.TextBox9.Name = "TextBox9"
@@ -488,7 +501,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Snow
-        Me.GroupBox1.Location = New System.Drawing.Point(886, 122)
+        Me.GroupBox1.Location = New System.Drawing.Point(886, 129)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(416, 460)
         Me.GroupBox1.TabIndex = 52
@@ -762,12 +775,24 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.RadioButton1)
         Me.GroupBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.Snow
-        Me.GroupBox2.Location = New System.Drawing.Point(886, 19)
+        Me.GroupBox2.Location = New System.Drawing.Point(886, 26)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(416, 97)
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Mode"
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.RadioButton3.Location = New System.Drawing.Point(204, 32)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(141, 23)
+        Me.RadioButton3.TabIndex = 55
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "Simulation Mode"
+        Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'RadioButton2
         '
@@ -815,6 +840,7 @@ Partial Class Form1
         '
         'TextBox10
         '
+        Me.TextBox10.Enabled = False
         Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox10.Location = New System.Drawing.Point(462, 71)
         Me.TextBox10.Name = "TextBox10"
@@ -862,6 +888,26 @@ Partial Class Form1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "HPU Tank"
         '
+        'Button27
+        '
+        Me.Button27.Enabled = False
+        Me.Button27.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button27.Location = New System.Drawing.Point(53, 53)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(10, 15)
+        Me.Button27.TabIndex = 68
+        Me.Button27.UseVisualStyleBackColor = True
+        '
+        'Button26
+        '
+        Me.Button26.Enabled = False
+        Me.Button26.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button26.Location = New System.Drawing.Point(53, 27)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(10, 15)
+        Me.Button26.TabIndex = 67
+        Me.Button26.UseVisualStyleBackColor = True
+        '
         'Label24
         '
         Me.Label24.AutoSize = True
@@ -875,6 +921,7 @@ Partial Class Form1
         '
         'TextBox12
         '
+        Me.TextBox12.Enabled = False
         Me.TextBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox12.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox12.Location = New System.Drawing.Point(158, 70)
@@ -917,44 +964,39 @@ Partial Class Form1
         Me.Label36.TabIndex = 62
         Me.Label36.Text = "Temp High"
         '
-        'Button26
+        'Timer1
         '
-        Me.Button26.Enabled = False
-        Me.Button26.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button26.Location = New System.Drawing.Point(53, 27)
-        Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(10, 15)
-        Me.Button26.TabIndex = 67
-        Me.Button26.UseVisualStyleBackColor = True
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 1000
         '
-        'Button27
+        'Label16
         '
-        Me.Button27.Enabled = False
-        Me.Button27.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button27.Location = New System.Drawing.Point(53, 53)
-        Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(10, 15)
-        Me.Button27.TabIndex = 68
-        Me.Button27.UseVisualStyleBackColor = True
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(1233, 12)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(63, 19)
+        Me.Label16.TabIndex = 66
+        Me.Label16.Text = "Label16"
         '
-        'RadioButton3
+        'Button28
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.RadioButton3.Location = New System.Drawing.Point(204, 32)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(141, 23)
-        Me.RadioButton3.TabIndex = 55
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Simulation Mode"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.Button28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button28.Location = New System.Drawing.Point(436, 12)
+        Me.Button28.Name = "Button28"
+        Me.Button28.Size = New System.Drawing.Size(121, 29)
+        Me.Button28.TabIndex = 67
+        Me.Button28.Text = "Test Page"
+        Me.Button28.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(1397, 917)
+        Me.ClientSize = New System.Drawing.Size(1432, 917)
+        Me.Controls.Add(Me.Button28)
+        Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label22)
@@ -1087,4 +1129,7 @@ Partial Class Form1
     Friend WithEvents Button27 As Button
     Friend WithEvents Button26 As Button
     Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Button28 As Button
 End Class
