@@ -19,6 +19,8 @@ Public Class Form1
     Private cal_sum As Integer = cal12 + cal3 + cal4 + cal56
     Const floor_saver As Single = 4.57
     Const roof_saver As Single = 117.16
+    Private auto_mode As Integer = 0
+    Private manual_mode As Integer = 0
 
     Public Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         g = Me.CreateGraphics()
@@ -28,6 +30,7 @@ Public Class Form1
         brush3 = New Drawing.SolidBrush(Color.LawnGreen)
         GroupBox1.Enabled = False
         TextBox10.Text += 141.1
+        GroupBox4.Hide()
 
     End Sub
 
@@ -224,11 +227,13 @@ Public Class Form1
     End Sub
 
     Private Sub RadioButton1_CheckedChanged_1(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged 'Manual Mode Radio Button
-        If RadioButton1.Checked Then
-            GroupBox1.Enabled = True
-        Else
-            GroupBox1.Enabled = False
-        End If
+        GroupBox1.Show()
+        GroupBox4.Hide()
+        GroupBox1.Enabled = True
+        GroupBox4.Enabled = False
+        manual_mode = 1
+        auto_mode = 0
+
     End Sub
 
     Public Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click 'HPU Pump A Start Button
@@ -719,5 +724,86 @@ Public Class Form1
         Test_Page.Show()
         Me.Hide()
 
+    End Sub
+
+
+
+    'DW Auto Mode 
+
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged 'Auto Mode Selected
+
+        GroupBox4.Show()
+        GroupBox1.Hide()
+        GroupBox1.Enabled = False
+        GroupBox4.Enabled = True
+        auto_mode = 1
+        manual_mode = 0
+
+
+    End Sub
+
+
+
+    Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click 'DW ON Auto Mode
+        If dw_on = 0 And e_stop = 0 Then
+
+            If hpu_a = 0 And hpu_b = 0 Then
+                Delay(1)
+                Using brush3 As New SolidBrush(Color.LawnGreen)
+                    g.FillEllipse(brush3, 110, 680, 40, 40) 'HPU Pump A
+                End Using
+                Button44.Enabled = False
+                Button44.Visible = False
+                Button42.Enabled = True
+                Button42.Visible = True
+                While TextBox7.Text < 159
+                    TextBox7.Text += 11
+                End While
+                hpu_a = 1
+            End If
+
+            If lube_oil = 0 Then
+                Using brush3 As New SolidBrush(Color.LawnGreen)
+                    g.FillEllipse(brush3, 740, 800, 40, 40) 'Lube Oil Pump
+                End Using
+                While TextBox9.Text < 88
+                    TextBox9.Text += 11
+                End While
+                lube_oil = 1
+            End If
+
+        End If
+
+        If hpu_a = 1 Or hpu_b = 1 Then
+
+        End If
+        If dw_on = 0 And lube_oil = 1 And (hpu_a = 1 Or hpu_b = 1) Then
+            Delay(0.5)
+            Using brush3 As New SolidBrush(Color.LawnGreen)
+                g.FillEllipse(brush3, 700, 160, 60, 60) 'DW A Motor
+                g.FillEllipse(brush3, 700, 270, 60, 60) 'DW B Motor
+                g.FillEllipse(brush3, 700, 370, 60, 60) 'DW C Motor
+                g.FillEllipse(brush3, 600, 160, 60, 60) 'DW A Blower Motor
+                g.FillEllipse(brush3, 600, 270, 60, 60) 'DW B Blower Motor
+                g.FillEllipse(brush3, 600, 370, 60, 60) 'DW C Blower Motor
+
+            End Using
+            Dim myFont As Font
+            Dim myBrush As Brush
+            myBrush = New Drawing.SolidBrush(Color.Black)
+            myFont = New System.Drawing.Font("Times New Roman", 24)
+            Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 173) 'DW A 
+            Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 283) 'DW B
+            Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 382) 'DW C
+            Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 170) 'DW A Blower
+            Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 283) 'DW B Blower
+            Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 381) 'DW C Blower
+            dw_on = 1
+            Button34.Enabled = False
+            Button34.Visible = False
+            Button31.Enabled = True
+            Button31.Visible = True
+        End If
     End Sub
 End Class
