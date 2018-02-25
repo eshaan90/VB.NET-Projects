@@ -15,8 +15,8 @@ Public Class Login_Page
         'myConnection.ConnectionString = connString
         'myConnection.Open()
 
-        Delay(1)
-        Form1.Show()
+        Delay(0.5)
+        Home.Show()
         Me.Hide()
     End Sub
 
@@ -29,7 +29,7 @@ Public Class Login_Page
         'Delay(1)
 
 
-        Form1.Show()
+        Home.Show()
         Me.Hide()
     End Sub
 End Class
