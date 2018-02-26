@@ -83,6 +83,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Alarm_ManagementDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="alarm_recorderDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>alarm_recorderDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +140,12 @@
       <DependentUpon>testdbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Wait Func.vb" />
+    <Compile Include="Web_Browser.Designer.vb">
+      <DependentUpon>Web_Browser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Browser.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Alarms Page.resx">
@@ -161,6 +172,9 @@
     <EmbeddedResource Include="Test Page.resx">
       <DependentUpon>Test Page.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Web_Browser.resx">
+      <DependentUpon>Web_Browser.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Alarm_ManagementDataSet.xsc">
@@ -173,6 +187,17 @@
     </None>
     <None Include="Alarm_ManagementDataSet.xss">
       <DependentUpon>Alarm_ManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="alarm_recorderDataSet.xsc">
+      <DependentUpon>alarm_recorderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="alarm_recorderDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>alarm_recorderDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="alarm_recorderDataSet.xss">
+      <DependentUpon>alarm_recorderDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -200,6 +225,28 @@
     <Content Include="Alarm Management.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="alarm_recorder.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

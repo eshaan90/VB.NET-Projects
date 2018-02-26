@@ -119,10 +119,25 @@ Partial Class Form1
         Me.Button33 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
         Me.Button34 = New System.Windows.Forms.Button()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Button45 = New System.Windows.Forms.Button()
+        Me.Button59 = New System.Windows.Forms.Button()
+        Me.Button47 = New System.Windows.Forms.Button()
+        Me.Button48 = New System.Windows.Forms.Button()
+        Me.Button50 = New System.Windows.Forms.Button()
+        Me.Button52 = New System.Windows.Forms.Button()
+        Me.Button53 = New System.Windows.Forms.Button()
+        Me.Button54 = New System.Windows.Forms.Button()
+        Me.Button55 = New System.Windows.Forms.Button()
+        Me.Button56 = New System.Windows.Forms.Button()
+        Me.Button57 = New System.Windows.Forms.Button()
+        Me.Button58 = New System.Windows.Forms.Button()
+        Me.Button46 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -490,7 +505,7 @@ Partial Class Form1
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(145, 29)
         Me.Button4.TabIndex = 51
-        Me.Button4.Text = "Documentation"
+        Me.Button4.Text = "Video Preview"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -532,15 +547,13 @@ Partial Class Form1
         'Button38
         '
         Me.Button38.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button38.Enabled = False
         Me.Button38.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button38.Location = New System.Drawing.Point(29, 130)
+        Me.Button38.Location = New System.Drawing.Point(46, 130)
         Me.Button38.Name = "Button38"
         Me.Button38.Size = New System.Drawing.Size(102, 71)
         Me.Button38.TabIndex = 77
         Me.Button38.Text = "Caliper Brakes Off"
         Me.Button38.UseVisualStyleBackColor = False
-        Me.Button38.Visible = False
         '
         'Button37
         '
@@ -889,7 +902,7 @@ Partial Class Form1
         '
         Me.TextBox10.Enabled = False
         Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(462, 71)
+        Me.TextBox10.Location = New System.Drawing.Point(227, 71)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(113, 26)
         Me.TextBox10.TabIndex = 62
@@ -900,7 +913,7 @@ Partial Class Form1
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(482, 100)
+        Me.Label22.Location = New System.Drawing.Point(246, 99)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(75, 19)
         Me.Label22.TabIndex = 63
@@ -910,7 +923,7 @@ Partial Class Form1
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(578, 81)
+        Me.Label23.Location = New System.Drawing.Point(344, 80)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(28, 16)
         Me.Label23.TabIndex = 64
@@ -1055,9 +1068,9 @@ Partial Class Form1
         Me.GroupBox4.Enabled = False
         Me.GroupBox4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.Snow
-        Me.GroupBox4.Location = New System.Drawing.Point(509, 129)
+        Me.GroupBox4.Location = New System.Drawing.Point(886, 129)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(416, 460)
+        Me.GroupBox4.Size = New System.Drawing.Size(416, 459)
         Me.GroupBox4.TabIndex = 68
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Auto Control"
@@ -1067,7 +1080,7 @@ Partial Class Form1
         Me.Button41.BackColor = System.Drawing.Color.Gainsboro
         Me.Button41.Enabled = False
         Me.Button41.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button41.Location = New System.Drawing.Point(277, 368)
+        Me.Button41.Location = New System.Drawing.Point(263, 368)
         Me.Button41.Name = "Button41"
         Me.Button41.Size = New System.Drawing.Size(102, 71)
         Me.Button41.TabIndex = 83
@@ -1080,7 +1093,7 @@ Partial Class Form1
         Me.Button42.BackColor = System.Drawing.Color.Gainsboro
         Me.Button42.Enabled = False
         Me.Button42.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button42.Location = New System.Drawing.Point(66, 368)
+        Me.Button42.Location = New System.Drawing.Point(29, 368)
         Me.Button42.Name = "Button42"
         Me.Button42.Size = New System.Drawing.Size(102, 71)
         Me.Button42.TabIndex = 82
@@ -1092,7 +1105,7 @@ Partial Class Form1
         '
         Me.Button43.BackColor = System.Drawing.Color.Gainsboro
         Me.Button43.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button43.Location = New System.Drawing.Point(277, 367)
+        Me.Button43.Location = New System.Drawing.Point(263, 368)
         Me.Button43.Name = "Button43"
         Me.Button43.Size = New System.Drawing.Size(102, 71)
         Me.Button43.TabIndex = 81
@@ -1103,7 +1116,7 @@ Partial Class Form1
         '
         Me.Button44.BackColor = System.Drawing.Color.Gainsboro
         Me.Button44.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button44.Location = New System.Drawing.Point(43, 368)
+        Me.Button44.Location = New System.Drawing.Point(29, 368)
         Me.Button44.Name = "Button44"
         Me.Button44.Size = New System.Drawing.Size(102, 71)
         Me.Button44.TabIndex = 80
@@ -1113,22 +1126,19 @@ Partial Class Form1
         'Button39
         '
         Me.Button39.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button39.Enabled = False
         Me.Button39.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button39.Location = New System.Drawing.Point(62, 156)
+        Me.Button39.Location = New System.Drawing.Point(29, 137)
         Me.Button39.Name = "Button39"
         Me.Button39.Size = New System.Drawing.Size(102, 71)
         Me.Button39.TabIndex = 79
         Me.Button39.Text = "Caliper Brakes Off"
         Me.Button39.UseVisualStyleBackColor = False
-        Me.Button39.Visible = False
         '
         'Button40
         '
         Me.Button40.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button40.Enabled = False
         Me.Button40.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button40.Location = New System.Drawing.Point(43, 156)
+        Me.Button40.Location = New System.Drawing.Point(29, 137)
         Me.Button40.Name = "Button40"
         Me.Button40.Size = New System.Drawing.Size(102, 71)
         Me.Button40.TabIndex = 78
@@ -1140,7 +1150,7 @@ Partial Class Form1
         '
         Me.Button35.BackColor = System.Drawing.Color.Gainsboro
         Me.Button35.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button35.Location = New System.Drawing.Point(277, 235)
+        Me.Button35.Location = New System.Drawing.Point(263, 235)
         Me.Button35.Name = "Button35"
         Me.Button35.Size = New System.Drawing.Size(102, 71)
         Me.Button35.TabIndex = 77
@@ -1152,7 +1162,7 @@ Partial Class Form1
         Me.Button31.BackColor = System.Drawing.Color.Gainsboro
         Me.Button31.Enabled = False
         Me.Button31.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button31.Location = New System.Drawing.Point(62, 63)
+        Me.Button31.Location = New System.Drawing.Point(29, 46)
         Me.Button31.Name = "Button31"
         Me.Button31.Size = New System.Drawing.Size(102, 71)
         Me.Button31.TabIndex = 79
@@ -1164,7 +1174,7 @@ Partial Class Form1
         '
         Me.Button36.BackColor = System.Drawing.Color.Gainsboro
         Me.Button36.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button36.Location = New System.Drawing.Point(277, 149)
+        Me.Button36.Location = New System.Drawing.Point(263, 137)
         Me.Button36.Name = "Button36"
         Me.Button36.Size = New System.Drawing.Size(102, 71)
         Me.Button36.TabIndex = 76
@@ -1175,7 +1185,7 @@ Partial Class Form1
         '
         Me.Button32.BackColor = System.Drawing.Color.Gainsboro
         Me.Button32.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button32.Location = New System.Drawing.Point(180, 149)
+        Me.Button32.Location = New System.Drawing.Point(164, 149)
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(61, 59)
         Me.Button32.TabIndex = 78
@@ -1186,7 +1196,7 @@ Partial Class Form1
         '
         Me.Button30.BackColor = System.Drawing.Color.IndianRed
         Me.Button30.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button30.Location = New System.Drawing.Point(308, 63)
+        Me.Button30.Location = New System.Drawing.Point(263, 46)
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(102, 71)
         Me.Button30.TabIndex = 76
@@ -1197,7 +1207,7 @@ Partial Class Form1
         '
         Me.Button33.BackColor = System.Drawing.Color.Gainsboro
         Me.Button33.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button33.Location = New System.Drawing.Point(180, 69)
+        Me.Button33.Location = New System.Drawing.Point(164, 67)
         Me.Button33.Name = "Button33"
         Me.Button33.Size = New System.Drawing.Size(61, 59)
         Me.Button33.TabIndex = 77
@@ -1209,7 +1219,7 @@ Partial Class Form1
         Me.Button29.BackColor = System.Drawing.Color.IndianRed
         Me.Button29.Enabled = False
         Me.Button29.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button29.Location = New System.Drawing.Point(277, 63)
+        Me.Button29.Location = New System.Drawing.Point(263, 46)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(102, 71)
         Me.Button29.TabIndex = 76
@@ -1221,19 +1231,194 @@ Partial Class Form1
         '
         Me.Button34.BackColor = System.Drawing.Color.Gainsboro
         Me.Button34.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button34.Location = New System.Drawing.Point(45, 63)
+        Me.Button34.Location = New System.Drawing.Point(29, 46)
         Me.Button34.Name = "Button34"
         Me.Button34.Size = New System.Drawing.Size(102, 71)
         Me.Button34.TabIndex = 76
         Me.Button34.Text = "DW On"
         Me.Button34.UseVisualStyleBackColor = False
         '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.Button46)
+        Me.GroupBox5.Controls.Add(Me.Button45)
+        Me.GroupBox5.Controls.Add(Me.Button59)
+        Me.GroupBox5.Controls.Add(Me.Button47)
+        Me.GroupBox5.Controls.Add(Me.Button48)
+        Me.GroupBox5.Controls.Add(Me.Button50)
+        Me.GroupBox5.Controls.Add(Me.Button52)
+        Me.GroupBox5.Controls.Add(Me.Button53)
+        Me.GroupBox5.Controls.Add(Me.Button54)
+        Me.GroupBox5.Controls.Add(Me.Button55)
+        Me.GroupBox5.Controls.Add(Me.Button56)
+        Me.GroupBox5.Controls.Add(Me.Button57)
+        Me.GroupBox5.Controls.Add(Me.Button58)
+        Me.GroupBox5.Enabled = False
+        Me.GroupBox5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox5.ForeColor = System.Drawing.Color.Snow
+        Me.GroupBox5.Location = New System.Drawing.Point(510, 129)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(416, 459)
+        Me.GroupBox5.TabIndex = 84
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Setup Control"
+        '
+        'Button45
+        '
+        Me.Button45.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button45.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button45.Location = New System.Drawing.Point(263, 235)
+        Me.Button45.Name = "Button45"
+        Me.Button45.Size = New System.Drawing.Size(102, 71)
+        Me.Button45.TabIndex = 85
+        Me.Button45.Text = "Low HPU Pressure"
+        Me.Button45.UseVisualStyleBackColor = False
+        '
+        'Button59
+        '
+        Me.Button59.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button59.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button59.Location = New System.Drawing.Point(29, 235)
+        Me.Button59.Name = "Button59"
+        Me.Button59.Size = New System.Drawing.Size(102, 71)
+        Me.Button59.TabIndex = 84
+        Me.Button59.Text = "Low Air Pressure"
+        Me.Button59.UseVisualStyleBackColor = False
+        '
+        'Button47
+        '
+        Me.Button47.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button47.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button47.Location = New System.Drawing.Point(263, 368)
+        Me.Button47.Name = "Button47"
+        Me.Button47.Size = New System.Drawing.Size(102, 71)
+        Me.Button47.TabIndex = 81
+        Me.Button47.Text = "HPU B Start"
+        Me.Button47.UseVisualStyleBackColor = False
+        '
+        'Button48
+        '
+        Me.Button48.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button48.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button48.Location = New System.Drawing.Point(29, 368)
+        Me.Button48.Name = "Button48"
+        Me.Button48.Size = New System.Drawing.Size(102, 71)
+        Me.Button48.TabIndex = 80
+        Me.Button48.Text = "HPU A Start"
+        Me.Button48.UseVisualStyleBackColor = False
+        '
+        'Button50
+        '
+        Me.Button50.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button50.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button50.Location = New System.Drawing.Point(29, 137)
+        Me.Button50.Name = "Button50"
+        Me.Button50.Size = New System.Drawing.Size(102, 71)
+        Me.Button50.TabIndex = 78
+        Me.Button50.Text = "Caliper Brakes On"
+        Me.Button50.UseVisualStyleBackColor = False
+        Me.Button50.Visible = False
+        '
+        'Button52
+        '
+        Me.Button52.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button52.Enabled = False
+        Me.Button52.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button52.Location = New System.Drawing.Point(29, 46)
+        Me.Button52.Name = "Button52"
+        Me.Button52.Size = New System.Drawing.Size(102, 71)
+        Me.Button52.TabIndex = 79
+        Me.Button52.Text = "DW Off"
+        Me.Button52.UseVisualStyleBackColor = False
+        Me.Button52.Visible = False
+        '
+        'Button53
+        '
+        Me.Button53.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button53.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button53.Location = New System.Drawing.Point(263, 137)
+        Me.Button53.Name = "Button53"
+        Me.Button53.Size = New System.Drawing.Size(102, 71)
+        Me.Button53.TabIndex = 76
+        Me.Button53.Text = "Low Clutch"
+        Me.Button53.UseVisualStyleBackColor = False
+        '
+        'Button54
+        '
+        Me.Button54.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button54.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button54.Location = New System.Drawing.Point(164, 149)
+        Me.Button54.Name = "Button54"
+        Me.Button54.Size = New System.Drawing.Size(61, 59)
+        Me.Button54.TabIndex = 78
+        Me.Button54.Text = "▲"
+        Me.Button54.UseVisualStyleBackColor = False
+        '
+        'Button55
+        '
+        Me.Button55.BackColor = System.Drawing.Color.IndianRed
+        Me.Button55.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button55.Location = New System.Drawing.Point(263, 46)
+        Me.Button55.Name = "Button55"
+        Me.Button55.Size = New System.Drawing.Size(102, 71)
+        Me.Button55.TabIndex = 76
+        Me.Button55.Text = "Emergency Stop"
+        Me.Button55.UseVisualStyleBackColor = False
+        '
+        'Button56
+        '
+        Me.Button56.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button56.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button56.Location = New System.Drawing.Point(164, 67)
+        Me.Button56.Name = "Button56"
+        Me.Button56.Size = New System.Drawing.Size(61, 59)
+        Me.Button56.TabIndex = 77
+        Me.Button56.Text = "▲"
+        Me.Button56.UseVisualStyleBackColor = False
+        '
+        'Button57
+        '
+        Me.Button57.BackColor = System.Drawing.Color.IndianRed
+        Me.Button57.Enabled = False
+        Me.Button57.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button57.Location = New System.Drawing.Point(263, 46)
+        Me.Button57.Name = "Button57"
+        Me.Button57.Size = New System.Drawing.Size(102, 71)
+        Me.Button57.TabIndex = 76
+        Me.Button57.Text = "Emergency Stop Release"
+        Me.Button57.UseVisualStyleBackColor = False
+        Me.Button57.Visible = False
+        '
+        'Button58
+        '
+        Me.Button58.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button58.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button58.Location = New System.Drawing.Point(29, 46)
+        Me.Button58.Name = "Button58"
+        Me.Button58.Size = New System.Drawing.Size(102, 71)
+        Me.Button58.TabIndex = 76
+        Me.Button58.Text = "DW On"
+        Me.Button58.UseVisualStyleBackColor = False
+        '
+        'Button46
+        '
+        Me.Button46.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button46.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button46.Location = New System.Drawing.Point(44, 235)
+        Me.Button46.Name = "Button46"
+        Me.Button46.Size = New System.Drawing.Size(102, 71)
+        Me.Button46.TabIndex = 86
+        Me.Button46.Text = "Air Pressure Normal"
+        Me.Button46.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.ClientSize = New System.Drawing.Size(1616, 911)
+        Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.Button28)
         Me.Controls.Add(Me.Label16)
@@ -1282,6 +1467,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu Application"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
@@ -1289,6 +1475,7 @@ Partial Class Form1
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1390,4 +1577,18 @@ Partial Class Form1
     Friend WithEvents Button42 As Button
     Friend WithEvents Button43 As Button
     Friend WithEvents Button44 As Button
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents Button59 As Button
+    Friend WithEvents Button47 As Button
+    Friend WithEvents Button52 As Button
+    Friend WithEvents Button53 As Button
+    Friend WithEvents Button54 As Button
+    Friend WithEvents Button55 As Button
+    Friend WithEvents Button56 As Button
+    Friend WithEvents Button57 As Button
+    Friend WithEvents Button58 As Button
+    Friend WithEvents Button45 As Button
+    Friend WithEvents Button48 As Button
+    Friend WithEvents Button50 As Button
+    Friend WithEvents Button46 As Button
 End Class

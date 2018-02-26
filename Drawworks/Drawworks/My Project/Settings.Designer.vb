@@ -75,6 +75,17 @@ Namespace My
                 Return CType(Me("testdbConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\alarm_recorder.accd"& _ 
+            "b")>  _
+        Public ReadOnly Property alarm_recorderConnectionString() As String
+            Get
+                Return CType(Me("alarm_recorderConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
