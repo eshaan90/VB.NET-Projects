@@ -120,6 +120,7 @@ Partial Class Form1
         Me.Button29 = New System.Windows.Forms.Button()
         Me.Button34 = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Button46 = New System.Windows.Forms.Button()
         Me.Button45 = New System.Windows.Forms.Button()
         Me.Button59 = New System.Windows.Forms.Button()
         Me.Button47 = New System.Windows.Forms.Button()
@@ -132,7 +133,9 @@ Partial Class Form1
         Me.Button56 = New System.Windows.Forms.Button()
         Me.Button57 = New System.Windows.Forms.Button()
         Me.Button58 = New System.Windows.Forms.Button()
-        Me.Button46 = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -261,7 +264,7 @@ Partial Class Form1
         '
         Me.TextBox8.Enabled = False
         Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(623, 70)
+        Me.TextBox8.Location = New System.Drawing.Point(680, 70)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(113, 26)
         Me.TextBox8.TabIndex = 11
@@ -283,7 +286,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(627, 99)
+        Me.Label3.Location = New System.Drawing.Point(684, 99)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(109, 19)
         Me.Label3.TabIndex = 13
@@ -492,7 +495,7 @@ Partial Class Form1
         '
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(736, 76)
+        Me.Label34.Location = New System.Drawing.Point(793, 76)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(35, 16)
         Me.Label34.TabIndex = 45
@@ -1256,12 +1259,24 @@ Partial Class Form1
         Me.GroupBox5.Enabled = False
         Me.GroupBox5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.ForeColor = System.Drawing.Color.Snow
-        Me.GroupBox5.Location = New System.Drawing.Point(510, 129)
+        Me.GroupBox5.Location = New System.Drawing.Point(1188, 129)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(416, 459)
         Me.GroupBox5.TabIndex = 84
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Setup Control"
+        Me.GroupBox5.Visible = False
+        '
+        'Button46
+        '
+        Me.Button46.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button46.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button46.Location = New System.Drawing.Point(44, 235)
+        Me.Button46.Name = "Button46"
+        Me.Button46.Size = New System.Drawing.Size(102, 71)
+        Me.Button46.TabIndex = 86
+        Me.Button46.Text = "Air Pressure Normal"
+        Me.Button46.UseVisualStyleBackColor = False
         '
         'Button45
         '
@@ -1400,16 +1415,36 @@ Partial Class Form1
         Me.Button58.Text = "DW On"
         Me.Button58.UseVisualStyleBackColor = False
         '
-        'Button46
+        'Label17
         '
-        Me.Button46.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button46.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button46.Location = New System.Drawing.Point(44, 235)
-        Me.Button46.Name = "Button46"
-        Me.Button46.Size = New System.Drawing.Size(102, 71)
-        Me.Button46.TabIndex = 86
-        Me.Button46.Text = "Air Pressure Normal"
-        Me.Button46.UseVisualStyleBackColor = False
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(1350, 717)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(39, 16)
+        Me.Label17.TabIndex = 87
+        Me.Label17.Text = "Tons"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(1241, 740)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(84, 19)
+        Me.Label18.TabIndex = 86
+        Me.Label18.Text = "Hook Load"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Enabled = False
+        Me.TextBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox11.Location = New System.Drawing.Point(1237, 711)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(113, 26)
+        Me.TextBox11.TabIndex = 85
+        Me.TextBox11.Text = "75.8"
+        Me.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Form1
         '
@@ -1418,6 +1453,9 @@ Partial Class Form1
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1616, 911)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.TextBox11)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.Button28)
@@ -1591,4 +1629,7 @@ Partial Class Form1
     Friend WithEvents Button48 As Button
     Friend WithEvents Button50 As Button
     Friend WithEvents Button46 As Button
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents TextBox11 As TextBox
 End Class

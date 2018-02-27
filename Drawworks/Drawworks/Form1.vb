@@ -986,6 +986,7 @@ Public Class Form1
         manual_mode = 0
     End Sub
 
+
     'DW ON button- Auto Mode
     Private Sub Button34_Click(sender As Object, e As EventArgs) Handles Button34.Click
         If dw_on = 0 And e_stop = 0 Then
@@ -1010,6 +1011,10 @@ Public Class Form1
                 Using brush3 As New SolidBrush(Color.LawnGreen)
                     g.FillEllipse(brush3, 740, 800, 40, 40) 'Lube Oil Pump
                 End Using
+                Button5.Enabled = False
+                Button5.Visible = False
+                Button14.Enabled = True
+                Button14.Visible = True
                 While TextBox9.Text < 88
                     TextBox9.Text += 11
                 End While
@@ -1050,36 +1055,53 @@ Public Class Form1
     'DW Off button- Auto Mode
     Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
         If dw_on = 1 Then
-            Delay(2)
-            Using brush3 As New SolidBrush(Color.White)
-                g.FillEllipse(brush3, 700, 160, 60, 60) 'DW A Motor
-                g.FillEllipse(brush3, 700, 270, 60, 60) 'DW B Motor
-                g.FillEllipse(brush3, 700, 370, 60, 60) 'DW C Motor
-                g.FillEllipse(brush3, 600, 160, 60, 60) 'DW A Blower Motor
-                g.FillEllipse(brush3, 600, 270, 60, 60) 'DW B Blower Motor
-                g.FillEllipse(brush3, 600, 370, 60, 60) 'DW C Blower Motor
+            If cal_sum > 1 Then
+                Delay(1)
+                Using brush3 As New SolidBrush(Color.White)
+                    g.FillEllipse(brush3, 700, 160, 60, 60) 'DW A Motor
+                    g.FillEllipse(brush3, 700, 270, 60, 60) 'DW B Motor
+                    g.FillEllipse(brush3, 700, 370, 60, 60) 'DW C Motor
+                    g.FillEllipse(brush3, 600, 160, 60, 60) 'DW A Blower Motor
+                    g.FillEllipse(brush3, 600, 270, 60, 60) 'DW B Blower Motor
+                    g.FillEllipse(brush3, 600, 370, 60, 60) 'DW C Blower Motor
 
-            End Using
-            Dim myFont As Font
-            Dim myBrush As Brush
-            myBrush = New Drawing.SolidBrush(Color.Black)
-            myFont = New System.Drawing.Font("Times New Roman", 24)
-            Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 173) 'DW A 
-            Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 283) 'DW B
-            Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 382) 'DW C
-            Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 170) 'DW A Blower
-            Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 283) 'DW B Blower
-            Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 381) 'DW C Blower
-            dw_on = 0
-            Button31.Enabled = False
-            Button31.Visible = False
-            Button34.Enabled = True
-            Button34.Visible = True
+                End Using
+                Dim myFont As Font
+                Dim myBrush As Brush
+                myBrush = New Drawing.SolidBrush(Color.Black)
+                myFont = New System.Drawing.Font("Times New Roman", 24)
+                Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 173) 'DW A 
+                Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 283) 'DW B
+                Me.CreateGraphics.DrawString("M", myFont, myBrush, 712, 382) 'DW C
+                Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 170) 'DW A Blower
+                Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 283) 'DW B Blower
+                Me.CreateGraphics.DrawString("M", myFont, myBrush, 612, 381) 'DW C Blower
+                dw_on = 0
+                Button31.Enabled = False
+                Button31.Visible = False
+                Button34.Enabled = True
+                Button34.Visible = True
+            End If
+
         End If
 
         If dw_on = 0 Then
+            Delay(1)
+            Using brush2 As New SolidBrush(Color.White)
+                g.FillEllipse(brush2, 740, 800, 40, 40) 'Lube Oil Pump
+            End Using
+            Button5.Enabled = True
+            Button5.Visible = True
+            Button14.Enabled = False
+            Button14.Visible = False
+            While TextBox9.Text <> 0
+                TextBox9.Text -= 11
+            End While
+            lube_oil = 0
+
             If TextBox2.Text > 130 Or TextBox1.Text > 130 Then
-                Delay(1)
+
+
 
                 high_clutch = 0
                 low_clutch = 0
@@ -1208,9 +1230,9 @@ Public Class Form1
         Button44.Visible = True
 
         Button39.Enabled = False
-        Button39.Visible = False
+        Button39.Visible = True
         Button40.Enabled = False
-        Button40.Visible = True
+        Button40.Visible = False
 
         Button31.Enabled = False
         Button31.Visible = False
@@ -1265,7 +1287,7 @@ Public Class Form1
             Button42.Enabled = True
             Button44.Enabled = True
             Button39.Enabled = True
-            Button40.Enabled = True
+
             Button31.Enabled = True
             Button34.Enabled = True
             Button32.Enabled = True
@@ -1706,4 +1728,6 @@ Public Class Form1
 
 
     End Sub
+
+
 End Class
